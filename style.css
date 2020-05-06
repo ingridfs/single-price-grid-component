@@ -1,7 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 21px 1px #dedede;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.join-us {
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 30px;
+}
+
+.join-us h1 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  margin: 20px 0px 20px 0px;
+}
+
+.join-us span {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+}
+
+.join-us p {
+  color:hsl(218, 22%, 67%);
+  font-weight: 400;
+  margin: 20px 0px 15px 0px;
+  line-height: 24px;
+}
+
+.subscription {
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0 0 0 10px;
+  padding: 10px;
+  flex: 1;
+  color: #fff;
+  padding: 30px;
+}
+
+.subscription h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.subscription p {
+  margin: 20px 0 25px 0;
+}
+
+.subscription span:nth-child(2) {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.subscription span:nth-child(3) {
+  color: rgba(255, 255, 255, 0.783);
+  margin-left: 10px;
+}
+
+.subscription button {
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 90%;
+  color: #fff;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 0px rgba(159, 159, 159, 0.447);
+  transition: ease-in-out 0.5s;
+}
+
+.subscription button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 12px 4px rgba(159, 159, 159, 0.447);
+  transform: scale(1.05);
+}
+
+.subscription button:focus,
+.subscription button:active {
+  outline: none;
+  box-shadow: 1px 1px 12px 4px rgba(159, 159, 159, 0.447);
+}
+
+.why-us {
+  background-color: hsla(179, 62%, 43%, 0.858);
+  border-radius: 0 0 10px 0;
+  padding: 30px 35px 35px 35px;
+  flex: 1;
+  color: #fff;
+}
+
+.why-us h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.why-us p {
+  color: rgba(255, 255, 255, 0.783);
+  margin-bottom: 5px;
+}
+
 .attribution { 
-  font-size: 11px; text-align: center;
+  color: gray;
+  margin-top: 10vh;
+  font-size: 11px; 
+  text-align: center;
 }
 
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: hsla(228, 45%, 44%, 0.79); 
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 70%;
+    flex-flow: column wrap;
+  }
+  .subscription {
+    border-radius: 0;
+  }
+  .why-us {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width: 1000px) {
+  .container {
+    width: 70%;
+  }
 }
