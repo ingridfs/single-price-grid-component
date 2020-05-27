@@ -83,14 +83,15 @@ body {
   width: 90%;
   color: #fff;
   background-color: hsl(71, 73%, 54%);
+  border: none;
   border-radius: 8px;
-  box-shadow: 0px 0px 8px 0px rgba(159, 159, 159, 0.447);
+  box-shadow: 0px 0px 8px 0px rgba(198, 198, 198, 0.447);
   transition: ease-in-out 0.5s;
 }
 
 .subscription button:hover {
   cursor: pointer;
-  box-shadow: 1px 1px 12px 4px rgba(159, 159, 159, 0.447);
+  box-shadow: 1px 1px 12px 4px rgba(199, 199, 199, 0.447);
   transform: scale(1.05);
 }
 
